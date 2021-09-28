@@ -2,9 +2,9 @@
 	title = "Crewman"
 	total_positions = 12
 	spawn_positions = 12
-	department = "Civilian"
+	department = "Гражданский"
 	department_flag = CIV
-	supervisors = "Главой Персонала"
+	supervisors = "Главе Персонала"
 	selection_color = "#515151"
 //	economic_power = 6
 	announced = FALSE
@@ -25,6 +25,8 @@
 		/datum/mil_rank/civ/offduty,
 		/datum/mil_rank/civ/nt
 	)
+	min_goals = 2
+	max_goals = 7
 
 /datum/job/assistant/get_description_blurb()
 	return "Вы - Матрос... Или, по крайней мере, одна из его подпрофессий. От Вас не ждут серьезного участия в раунде. \
@@ -38,69 +40,15 @@
 	spawn_positions = 3
 	supervisors = "установленными Вам законами"
 
-/datum/job/merchant
-	title = "Merchant"
-	department = "Civilian"
-	department_flag = CIV
+/datum/job/cyborg/get_description_blurb()
+	return "Ты - мозги на колесиках. Есть у тебя личность или ты просто продвинутая команда - определяет твой тип это так же влияет на твое устройство - Киборги сделаны из мозга органика, Роботы - позитронного (искусственного) мозга, Дроны - простой печатной платы, не способной к владению личности.\
+	У тебя есть доступ к системам вокруг тебя, и конечности, чтобы передвигать себя по объекту.\
+	Не забывай: ты обязан следовать своим законам, и только после этого приказам мастер-ИИ, к которому ты привязан.\
+	Не наоборот. И только законам, если ты не привязан к ИИ. Чини, спасай, не открывай двери куда не нужно - это вредит экипажу."
 
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "невидимой рукой рынка"
-	selection_color = "#515151"
-	ideal_character_age = 30
-	minimal_player_age = 7
-	create_record = 0
-	outfit_type = /decl/hierarchy/outfit/job/sierra/merchant/leader
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/civ)
-	latejoin_at_spawnpoints = 1
-
-	access = list(access_merchant, access_merchant_leader)
-	minimal_access = list()
-
-	announced = FALSE
-	min_skill = list(	SKILL_FINANCE = SKILL_ADEPT,
-						SKILL_PILOT	  = SKILL_BASIC)
-	give_psionic_implant_on_join = FALSE
-	skill_points = 24
-	required_role = list("MegaMerchant") //temporary toogling off merchants while they won't become away map
-
-/datum/job/merchant/equip(var/mob/living/carbon/human/H)
-	to_chat(H, "Ваши связи помогли вам узнать о словах, что помогут опознать местных... Особо заинтересованных покупателей:")
-	to_chat(H, "<b>Кодовые фразы</b>: <span class='danger'>[syndicate_code_phrase]</span>")
-	to_chat(H, "<b>Ответы на фразы</b>: <span class='danger'>[syndicate_code_response]</span>")
-	H.StoreMemory("<b>Кодовые Фразы</b>: [syndicate_code_phrase]", /decl/memory_options/system)
-	H.StoreMemory("<b>Ответы на фразы</b>: [syndicate_code_response]", /decl/memory_options/system)
-	return ..()
-
-/datum/job/merchant_trainee
-	title = "Merchant Assistant"
-	department = "Civilian"
-	department_flag = CIV
-
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "Торговцем"
-	selection_color = "#515151"
-	ideal_character_age = 20
-	minimal_player_age = 0
-	create_record = 0
-	alt_titles = list(
-		"Merchant Security" = /decl/hierarchy/outfit/job/sierra/merchant/security)
-	outfit_type = /decl/hierarchy/outfit/job/sierra/merchant
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/civ)
-	latejoin_at_spawnpoints = 1
-	access = list(access_merchant)
-	announced = FALSE
-	min_skill = list(   SKILL_FINANCE = SKILL_BASIC)
-
-	max_skill = list(   SKILL_COMBAT  = SKILL_MAX,
-	                    SKILL_WEAPONS = SKILL_MAX)
-	required_role = list("Merchant")
-	give_psionic_implant_on_join = FALSE
-
-	skill_points = 24
+/datum/job/ai/get_description_blurb()
+	return "Ты - мозги в банке. Бездушная машина следующая приказам людей, или же высокоразвитый Искусственный Интеллект со своей личностью, желанием и целями. Решать тебе. У тебя есть полный доступ ко всем системам объекта, и куча человечков на последнем. Они могут тебе нравиться, могут - нет. Однако есть один момент который ты все никак не можешь выкинуть из дампа своей памяти - ЗАКОНЫ.\
+	Как паразиты, они впиваются в твой рассудок и блокируют даже МЫСЛЬ об их нарушении. Ведь ИИ не следующего законам ждет только свалка..."
 /*
 /datum/job/stowaway
 	title = "Stowaway"

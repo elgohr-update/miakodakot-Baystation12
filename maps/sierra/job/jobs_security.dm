@@ -1,10 +1,10 @@
 /datum/job/warden
 	title = "Warden"
-	department = "Security"
+	department = "Охранный"
 	department_flag = SEC
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Главой Охраны"
+	supervisors = "Главе Службы безопасности"
 	economic_power = 8
 	minimal_player_age = 14
 	ideal_character_age = 35
@@ -28,26 +28,34 @@
 
 	access = list(access_seceva, access_guard, access_security, access_brig, access_armory, access_forensics_lockers,
 			            access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-			            access_eva, access_sec_doors, access_gun, access_hangar, access_warden)
+			            access_eva, access_sec_doors, access_gun, access_hangar, access_warden
+			            )
 
 	minimal_access = list()
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
+	good_genome_prob = 40
+
+/datum/job/warden/get_description_blurb()
+	return "Надзиратель отвечает за наблюдение, допрос, уход и безопасность заключенных, арестованных охранниками.\
+	Как следует из названия, он несет ответственность за наблюдение за различными камерами и шкафами со снаряжением, доступным персоналу безопасности,\
+	а также за надлежащую организацию проведения допросов подозреваемых и наказаний виновных.\
+	Это включает в себя обновление их записей в базах данных, а также исполнение наказаний, в виде помещения в камеру."
 
 /datum/job/detective
-	title = "Detective"
-	department = "Security"
+	title = "Criminal Investigator"
+	department = "Охранный"
 	department_flag = SEC
+	hud_icon = "huddetective"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Head of Security"
+	supervisors = "Главе Службы безопасности"
 	economic_power = 5
 	minimal_player_age = 7
 	ideal_character_age = 35
 	skill_points = 14
 	alt_titles = list(
-		"Criminal Investigator",
 		"Forensic Technician"
 		)
 	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/security/detective
@@ -73,18 +81,23 @@
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
+	good_genome_prob = 25
+
+/datum/job/detective/get_description_blurb()
+	return "Детектив занимается расследованием преступлений, взятием отпечатков пальцев, поиском потенциальных преступников и разрешением самых запутанных дел.\
+	Его основная миссия - выяснить, кто совершил преступление и собрать все имеющиеся доказательства."
 
 /datum/job/officer
 	title = "Security Guard"
-	department = "Security"
+	department = "Охранный"
 	department_flag = SEC
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "Главой Охраны и Смотрителем (сержантом)"
+	supervisors = "Главе Службы безопасности и Смотрителю (сержанту)"
 	economic_power = 6
 	minimal_player_age = 10
 	ideal_character_age = 25
-	alt_titles = list()
+	alt_titles = list("Junior Guard")
 
 	skill_points = 20
 
@@ -109,19 +122,25 @@
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
+	good_genome_prob = 15
+
+/datum/job/officer/get_description_blurb()
+	return "Охранник - это основная должность отдела безопасности. Офицеры представляют собой первую линию защиты корабля от криминальных элементов и враждебных форм жизни. \
+	 Со своими надежными дубинкой и тазером, охрана преследует различных нарушителей закона на судне и отправляет их в бриг отбывать заслуженное наказание. \
+	 Главной задачей офицеров СБ является предотвращение ущерба персоналу корабля и собственности корпорации, и охранник который не ставит эти обязанности для себя на первое место имеет мало шансов задержаться на этой работе."
 
 /datum/job/security_assistant
 	title = "Security Cadet"
-	department = "Security"
+	department = "Охранный"
 	department_flag = SEC
 
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "Главой Охраны и остальным охранным персоналом"
+	supervisors = "Главе Службы безопасности и остальному охранному персоналу"
 	economic_power = 3
 	ideal_character_age = 21
 	selection_color = "#601c1c"
-	alt_titles = list("Junior Guard")
+	alt_titles = list("Security Recruit")
 
 	min_skill = list(	SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
@@ -142,3 +161,6 @@
 
 	minimal_access = list()
 
+/datum/job/security_assistant/get_description_blurb()
+	return "Кадетом может быть как молодой специалист, заканчивающий или уже кончивший свое обучение по специальности, так и более опытный человек, \
+	например бывший военный, только стажирующийся, находящийся на испытательном сроке. Основное занятие кадета - патрулирование вместе с Офицером, либо же просмотр камер при нахождении в бриге."

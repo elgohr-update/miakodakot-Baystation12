@@ -25,6 +25,7 @@
 	var/warning = ""
 	var/hidden_from_codex			  // If it should not show up in Codex
 	var/category = /datum/language    // Used to point at root language types that shouldn't be visible
+	var/has_written_form = FALSE
 
 /datum/language/proc/can_be_spoken_properly_by(var/mob/speaker)
 	return TRUE
@@ -178,10 +179,6 @@
 
 	if(!istype(new_language) || (new_language in languages))
 		return 0
-	if(ishuman(src)) //inf
-		var/mob/living/carbon/human/H = src
-		if(new_language.primitive_version && !(H.species.name in new_language.native_speaker))
-			new_language = all_languages[new_language.primitive_version]
 	languages.Add(new_language)
 	return 1
 
@@ -244,7 +241,7 @@
 
 	show_browser(src, dat, "window=checklanguage")
 
-/mob/living/OnSelfTopic(href_list)
+/mob/living/OnSelfTopic(href_list, topic_status)
 	if(href_list["default_lang"])
 		if(href_list["default_lang"] == "reset")
 

@@ -1,14 +1,12 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
 /obj/effect/step_trigger/teleporter/random{
-	affect_ghosts = 0;
 	name = "escapeshuttle_leave";
 	teleport_x = 25;
 	teleport_x_offset = 245;
 	teleport_y = 25;
 	teleport_y_offset = 245;
-	teleport_z = 9;
-	teleport_z_offset = 0
+	teleport_z = 9
 	},
 /turf/space{
 	icon_state = "black"
@@ -16,24 +14,20 @@
 /area/space)
 "ab" = (
 /obj/effect/step_trigger/teleporter/random{
-	affect_ghosts = 0;
 	name = "escapeshuttle_leave";
 	teleport_x = 25;
 	teleport_x_offset = 245;
 	teleport_y = 25;
 	teleport_y_offset = 245;
-	teleport_z = 9;
-	teleport_z_offset = 0
+	teleport_z = 9
 	},
 /obj/effect/step_trigger/teleporter/random{
-	affect_ghosts = 0;
 	name = "escapeshuttle_leave";
 	teleport_x = 25;
 	teleport_x_offset = 245;
 	teleport_y = 25;
 	teleport_y_offset = 245;
-	teleport_z = 9;
-	teleport_z_offset = 0
+	teleport_z = 9
 	},
 /turf/space{
 	icon_state = "black"
@@ -46,7 +40,6 @@
 /area/space)
 "af" = (
 /obj/effect/step_trigger/thrower{
-	affect_ghosts = 0;
 	direction = 8;
 	icon_state = "wb";
 	name = "thrower_left";
@@ -54,19 +47,8 @@
 	},
 /turf/space/transit/north,
 /area/space)
-"ag" = (
-/obj/effect/step_trigger/thrower{
-	affect_ghosts = 0;
-	direction = 2;
-	icon_state = "sb";
-	name = "thrower_down";
-	tiles = 12
-	},
-/turf/space/transit/north,
-/area/space)
 "ah" = (
 /obj/effect/step_trigger/thrower{
-	affect_ghosts = 0;
 	direction = 4;
 	icon_state = "eb";
 	name = "thrower_right";
@@ -74,65 +56,35 @@
 	},
 /turf/space/transit/north,
 /area/space)
-"ai" = (
-/obj/effect/step_trigger/thrower{
-	affect_ghosts = 0;
-	direction = 2;
-	icon_state = "sb";
-	name = "thrower_down";
-	tiles = 12
-	},
-/turf/space/transit/east,
-/area/space)
-"aj" = (
-/obj/effect/step_trigger/thrower{
-	affect_ghosts = 0;
-	direction = 1;
-	icon_state = "nb";
-	name = "thrower_up";
-	tiles = 12
-	},
-/turf/space/transit/north,
-/area/space)
 "ak" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod6,
+/obj/effect/shuttle_landmark/escape_pod/transit/pod1,
 /turf/space/transit/north,
 /area/space)
 "al" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod7,
+/obj/effect/shuttle_landmark/escape_pod/transit/pod2,
 /turf/space/transit/north,
 /area/space)
 "am" = (
 /obj/effect/step_trigger/thrower{
-	affect_ghosts = 0;
-	direction = 2;
 	icon_state = "sb";
 	name = "thrower_down";
-	nostop = 0;
-	stopper = 1;
 	tiles = 12
 	},
 /obj/effect/step_trigger/thrower{
-	affect_ghosts = 0;
-	direction = 2;
 	icon_state = "sb";
 	name = "thrower_down";
-	nostop = 0;
-	stopper = 1;
 	tiles = 12
 	},
 /turf/space/transit/north,
 /area/space)
 "an" = (
 /obj/effect/step_trigger/thrower{
-	affect_ghosts = 0;
 	direction = 4;
 	icon_state = "eb";
 	name = "thrower_right";
 	tiles = 12
 	},
 /obj/effect/step_trigger/thrower{
-	affect_ghosts = 0;
 	direction = 4;
 	icon_state = "eb";
 	name = "thrower_right";
@@ -141,15 +93,15 @@
 /turf/space/transit/north,
 /area/space)
 "ao" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod12,
+/obj/effect/shuttle_landmark/escape_pod/transit/pod7,
 /turf/space/transit/north,
 /area/space)
 "ap" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod13,
+/obj/effect/shuttle_landmark/escape_pod/transit/pod8,
 /turf/space/transit/north,
 /area/space)
 "aq" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod14,
+/obj/effect/shuttle_landmark/escape_pod/transit/pod9,
 /turf/space/transit/north,
 /area/space)
 "ar" = (
@@ -165,12 +117,8 @@
 /area/space)
 "au" = (
 /obj/effect/step_trigger/thrower{
-	affect_ghosts = 0;
-	direction = 2;
 	icon_state = "sb";
 	name = "thrower_down";
-	nostop = 0;
-	stopper = 1;
 	tiles = 12
 	},
 /turf/space/transit/north,
@@ -181,7 +129,6 @@
 /area/space)
 "ax" = (
 /obj/effect/step_trigger/thrower{
-	affect_ghosts = 0;
 	direction = 4;
 	icon_state = "eb";
 	name = "thrower_right";
@@ -191,7 +138,6 @@
 /area/space)
 "ay" = (
 /obj/effect/step_trigger/thrower{
-	affect_ghosts = 0;
 	direction = 8;
 	icon_state = "wb";
 	name = "thrower_left";
@@ -201,7 +147,6 @@
 /area/space)
 "az" = (
 /obj/effect/step_trigger/thrower{
-	affect_ghosts = 0;
 	direction = 8;
 	icon_state = "wb";
 	name = "thrower_left";
@@ -214,21 +159,18 @@
 	direction = 1;
 	icon_state = "nb";
 	name = "thrower_up";
-	nostop = 0;
 	tiles = 12
 	},
 /turf/space/transit/north,
 /area/space)
 "aB" = (
 /obj/effect/step_trigger/teleporter/random{
-	affect_ghosts = 0;
 	name = "escapeshuttle_leave";
 	teleport_x = 25;
 	teleport_x_offset = 245;
 	teleport_y = 25;
 	teleport_y_offset = 245;
-	teleport_z = 9;
-	teleport_z_offset = 0
+	teleport_z = 9
 	},
 /turf/space/transit/north,
 /area/space)
@@ -240,11 +182,11 @@
 /turf/space/transit/north,
 /area/space)
 "aH" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod8,
+/obj/effect/shuttle_landmark/escape_pod/transit/pod3,
 /turf/space/transit/north,
 /area/space)
 "aI" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod9,
+/obj/effect/shuttle_landmark/escape_pod/transit/pod4,
 /turf/space/transit/north,
 /area/space)
 "aJ" = (
@@ -252,19 +194,14 @@
 	direction = 1;
 	icon_state = "nb";
 	name = "thrower_up";
-	nostop = 0;
 	tiles = 12
 	},
 /turf/space/transit/east,
 /area/space)
 "aK" = (
 /obj/effect/step_trigger/thrower{
-	affect_ghosts = 0;
-	direction = 2;
 	icon_state = "sb";
 	name = "thrower_down";
-	nostop = 0;
-	stopper = 1;
 	tiles = 12
 	},
 /turf/space/transit/east,
@@ -278,42 +215,30 @@
 /turf/space/transit/north,
 /area/space)
 "aP" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod10,
+/obj/effect/shuttle_landmark/escape_pod/transit/pod5,
 /turf/space/transit/east,
 /area/space)
 "aR" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod6,
-/turf/space,
-/area/space)
-"aS" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod7,
+/obj/effect/shuttle_landmark/escape_pod/out/pod1,
 /turf/space,
 /area/space)
 "aT" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod12,
-/turf/space,
-/area/space)
-"aU" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod13,
-/turf/space,
-/area/space)
-"aV" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod14,
+/obj/effect/shuttle_landmark/escape_pod/out/pod2,
 /turf/space,
 /area/space)
 "aX" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod10,
+/obj/effect/shuttle_landmark/escape_pod/out/pod5,
 /turf/space,
 /area/space)
 "ba" = (
 /turf/space,
 /area/space)
 "bb" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod8,
+/obj/effect/shuttle_landmark/escape_pod/out/pod3,
 /turf/space,
 /area/space)
 "bc" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod9,
+/obj/effect/shuttle_landmark/escape_pod/out/pod4,
 /turf/space,
 /area/space)
 
@@ -1374,7 +1299,7 @@ aa
 at
 az
 aJ
-ai
+aK
 ax
 aJ
 aK
@@ -5763,7 +5688,7 @@ ba
 ba
 ba
 ba
-bb
+ba
 ba
 ba
 ba
@@ -8158,7 +8083,6 @@ ba
 ba
 ba
 ba
-aS
 ba
 ba
 ba
@@ -8187,7 +8111,8 @@ ba
 ba
 ba
 ba
-bc
+ba
+ba
 ba
 ba
 ba
@@ -12001,7 +11926,7 @@ ba
 ba
 ba
 ba
-aU
+bb
 ba
 ba
 ba
@@ -13617,7 +13542,7 @@ ba
 ba
 ba
 ba
-aV
+bc
 ba
 ba
 ba
@@ -14077,13 +14002,13 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
+au
+au
 au
 au
 au
@@ -14272,13 +14197,13 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
+au
+au
 af
 aF
 aF
@@ -14870,14 +14795,14 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
+au
+au
+au
 af
 aF
 aF
@@ -15071,7 +14996,7 @@ aF
 aF
 aF
 aF
-ag
+au
 af
 aF
 aF
@@ -16687,7 +16612,7 @@ aF
 aF
 aF
 aF
-ag
+au
 ah
 aF
 aF
@@ -16890,14 +16815,14 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
+au
+au
+au
 ah
 aF
 aF
@@ -17504,13 +17429,13 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
+au
+au
 ah
 aF
 aF
@@ -17713,13 +17638,13 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
+au
+au
 au
 au
 au
@@ -20128,18 +20053,18 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
 aF
 aF
 aa
@@ -20341,7 +20266,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aa
@@ -20356,20 +20281,20 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
 aF
 aF
 aF
@@ -20543,7 +20468,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aa
@@ -20571,7 +20496,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -20745,7 +20670,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aa
@@ -20773,7 +20698,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -20924,18 +20849,18 @@ ba
 (103,1,1) = {"
 aa
 aF
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
 af
 aF
 aF
@@ -20947,7 +20872,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aa
@@ -20975,7 +20900,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -21149,7 +21074,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aa
@@ -21177,11 +21102,11 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
 aF
 aF
 aF
@@ -21341,17 +21266,17 @@ aF
 aF
 aF
 af
-aj
-aj
+aA
+aA
 aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
 aF
 aF
 aa
@@ -21367,9 +21292,9 @@ aF
 aF
 aF
 af
-aj
-aj
-aj
+aA
+aA
+aA
 aF
 aF
 aF
@@ -21383,7 +21308,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -21549,7 +21474,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -21569,9 +21494,9 @@ aF
 aF
 aF
 af
-aj
-aj
-aj
+aA
+aA
+aA
 aF
 aF
 aF
@@ -21585,8 +21510,8 @@ aF
 aF
 aF
 aF
-ag
-ag
+au
+au
 aF
 aF
 aF
@@ -21751,7 +21676,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -21771,7 +21696,7 @@ aF
 aF
 aF
 af
-aj
+aA
 aF
 aF
 aF
@@ -21788,8 +21713,8 @@ aF
 aF
 aF
 aF
-ag
-ag
+au
+au
 aF
 aF
 aF
@@ -21953,9 +21878,9 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
+au
+au
+au
 aF
 aF
 aF
@@ -21991,7 +21916,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -22157,7 +22082,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -22193,7 +22118,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -22339,14 +22264,14 @@ ba
 aa
 aF
 af
-aj
-aj
-aj
-aj
-aj
-aj
-aj
-aj
+aA
+aA
+aA
+aA
+aA
+aA
+aA
+aA
 aF
 aF
 aF
@@ -22359,7 +22284,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -22395,7 +22320,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -22548,7 +22473,7 @@ aF
 aF
 aF
 aF
-aj
+aA
 aF
 aF
 aF
@@ -22561,7 +22486,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -22597,7 +22522,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -22750,7 +22675,7 @@ aF
 aF
 aF
 aF
-aj
+aA
 aF
 aF
 aF
@@ -22763,7 +22688,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -22799,7 +22724,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -22945,14 +22870,14 @@ ba
 aa
 aF
 ah
-aj
-aj
-aj
-aj
-aj
-aj
-aj
-aj
+aA
+aA
+aA
+aA
+aA
+aA
+aA
+aA
 aF
 aF
 aF
@@ -22965,7 +22890,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -23001,7 +22926,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -23167,7 +23092,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -23203,7 +23128,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -23367,9 +23292,9 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
+au
+au
+au
 aF
 aF
 aF
@@ -23387,7 +23312,7 @@ aF
 aF
 aF
 ah
-aj
+aA
 aF
 aF
 aF
@@ -23404,8 +23329,8 @@ aF
 aF
 aF
 aF
-ag
-ag
+au
+au
 aF
 aF
 aF
@@ -23569,7 +23494,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -23589,9 +23514,9 @@ aF
 aF
 aF
 ah
-aj
-aj
-aj
+aA
+aA
+aA
 aF
 aF
 aF
@@ -23605,8 +23530,8 @@ aF
 aF
 aF
 aF
-ag
-ag
+au
+au
 aF
 aF
 aF
@@ -23771,7 +23696,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -23791,9 +23716,9 @@ aF
 aF
 aF
 ah
-aj
-aj
-aj
+aA
+aA
+aA
 aF
 aF
 aF
@@ -23807,7 +23732,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -23967,17 +23892,17 @@ aF
 aF
 aF
 ah
-aj
-aj
+aA
+aA
 aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
 aF
 aF
 aa
@@ -24005,11 +23930,11 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
 aF
 aF
 aF
@@ -24179,7 +24104,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aa
@@ -24207,7 +24132,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -24358,18 +24283,18 @@ ba
 (120,1,1) = {"
 aa
 aF
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
 ah
 aF
 aF
@@ -24381,7 +24306,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aa
@@ -24409,7 +24334,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -24583,7 +24508,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aa
@@ -24611,7 +24536,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -24785,7 +24710,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aa
@@ -24800,20 +24725,20 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
 aF
 aF
 aF
@@ -24987,7 +24912,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aa
@@ -25178,18 +25103,18 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
+au
 aF
 aF
 aa
@@ -27201,13 +27126,13 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
+au
+au
 aF
 aF
 aF
@@ -27400,17 +27325,17 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
+au
+au
+au
 af
 aF
 aF
 aF
 aF
 aF
-ag
-ag
+au
+au
 aF
 aF
 aF
@@ -27597,11 +27522,11 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
 af
 aF
 aF
@@ -27612,7 +27537,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -27814,7 +27739,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -28000,7 +27925,7 @@ aF
 aF
 aF
 aF
-ag
+au
 af
 aF
 aF
@@ -28016,7 +27941,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -28200,8 +28125,8 @@ aF
 aF
 aF
 aF
-ag
-ag
+au
+au
 af
 aF
 aF
@@ -28218,9 +28143,9 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
+au
+au
+au
 aF
 aa
 ba
@@ -28422,7 +28347,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aa
 ba
@@ -28624,7 +28549,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aa
 ba
@@ -28826,7 +28751,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aa
 ba
@@ -29028,7 +28953,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aa
 ba
@@ -29230,7 +29155,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aa
 ba
@@ -29412,8 +29337,8 @@ aF
 aF
 aF
 aF
-ag
-ag
+au
+au
 ah
 aF
 aF
@@ -29430,9 +29355,9 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
+au
+au
+au
 aF
 aa
 ba
@@ -29616,7 +29541,7 @@ aF
 aF
 aF
 aF
-ag
+au
 an
 aF
 aF
@@ -29632,7 +29557,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -29834,7 +29759,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -30021,11 +29946,11 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
 ah
 aF
 aF
@@ -30036,7 +29961,7 @@ aF
 aF
 aF
 aF
-ag
+au
 aF
 aF
 aF
@@ -30228,17 +30153,17 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
+au
+au
+au
 ah
 aF
 aF
 aF
 aF
 aF
-ag
-ag
+au
+au
 aF
 aF
 aF
@@ -30433,13 +30358,13 @@ aF
 aF
 aF
 aF
-ag
-ag
-ag
-ag
-ag
-ag
-ag
+au
+au
+au
+au
+au
+au
+au
 aF
 aF
 aF

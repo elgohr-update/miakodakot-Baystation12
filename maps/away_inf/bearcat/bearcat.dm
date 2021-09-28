@@ -20,6 +20,9 @@
 	vessel_mass = 60
 	max_speed = 1/(10 SECONDS)
 	burn_delay = 10 SECONDS
+	initial_restricted_waypoints = list(
+		"Exploration Shuttle" = list("nav_bearcat_port_dock_shuttle"),
+	)
 
 /obj/effect/overmap/visitable/ship/bearcat/New()
 	name = "[pick("FTV","ITV","IEV")] [pick("Bearcat", "Firebug", "Defiant", "Unsinkable","Horizon","Vagrant")]"
@@ -35,9 +38,10 @@
 	description = "A wrecked light freighter."
 	prefix = "maps/away_inf/"
 	suffixes = list("bearcat/bearcat-1.dmm", "bearcat/bearcat-2.dmm")
-	spawn_weight = 50 //INF, HABITABLE SHIPS SPAWN
-	cost = 2 //INF, WAS 1
-	shuttles_to_initialise = list(/datum/shuttle/autodock/ferry/lift)
+	spawn_cost = 0.5 // INF, WAS 1
+	player_cost = 4 // Нынешнее значение основано на количестве игроков в авейке ~bear1ake
+	spawn_weight = 1 // INF, spawn_weight = 0.67
+	shuttles_to_initialise = list(/datum/shuttle/autodock/ferry/lift, /datum/shuttle/autodock/overmap/exploration)
 	area_usage_test_exempted_root_areas = list(/area/ship)
 	apc_test_exempt_areas = list(
 		/area/ship/scrap/maintenance/engine/port = NO_SCRUBBER|NO_VENT,
@@ -72,7 +76,7 @@
 	icon_state = "tiny"
 	icon_keyboard = "tiny_keyboard"
 	icon_screen = "lift"
-	density = 0
+	density = FALSE
 
 /obj/effect/shuttle_landmark/lift/top
 	name = "Top Deck"
@@ -85,13 +89,13 @@
 	base_area = /area/ship/scrap/cargo/lower
 	base_turf = /turf/simulated/floor
 
-/obj/machinery/power/apc/derelict
-	cell_type = /obj/item/weapon/cell/crap/empty
+/obj/machinery/power/apc/derelict/bearcat
+	cell_type = /obj/item/cell/crap/empty
 	lighting = 0
 	equipment = 0
 	environ = 0
-	locked = 0
-	coverlocked = 0
+	locked = 1
+	coverlocked = 1
 
 /obj/machinery/door/airlock/autoname/command
 	door_color = COLOR_COMMAND_BLUE
@@ -146,5 +150,28 @@
 			uniform.attach_accessory(null, eyegore)
 		else
 			qdel(eyegore)
-	var/obj/item/weapon/cell/super/C = new()
+	var/obj/item/cell/super/C = new()
 	H.put_in_any_hand_if_possible(C)
+
+//Bearcat's exploration
+/datum/shuttle/autodock/overmap/exploration
+	name = "Exploration Shuttle"
+	shuttle_area = list(/area/ship/scrap/shuttle/outgoing)
+	dock_target = "bearcat_shuttle"
+	current_location = "nav_bearcat_port_dock_shuttle"
+	logging_home_tag = "nav_bearcat_port_dock_shuttle"
+	logging_access = access_bearcat
+	range = 1
+	fuel_consumption = 3
+	warmup_time = 7
+	defer_initialisation = TRUE
+
+/obj/machinery/computer/shuttle_control/explore/bearcat
+	name = "shuttle console"
+	shuttle_tag = "Exploration Shuttle"
+
+/obj/effect/shuttle_landmark/bearcat_shuttle
+	name = "Port Shuttle Dock"
+	landmark_tag = "nav_bearcat_port_dock_shuttle"
+	docking_controller = "bearcat_dock_port"
+

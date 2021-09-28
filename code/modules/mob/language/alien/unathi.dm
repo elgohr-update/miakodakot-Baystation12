@@ -1,6 +1,4 @@
 /datum/language/unathi
-	primitive_version = LANGUAGE_PUNATI //inf
-	native_speaker = list(SPECIES_YEOSA, SPECIES_UNATHI, SPECIES_EROSAN, SPECIES_IPC)
 	name = LANGUAGE_UNATHI_SINTA
 	desc = "The common language of Moghes, composed of sibilant hisses and rattles. Spoken natively by Unathi."
 	speech_verb = "шипит"
@@ -23,6 +21,7 @@
 		"a",  "a",  "e",  "e",  "i",  "i",  "o",  "o",  "u",  "u",  "s",  "s"
 	)
 	shorthand = "UT"
+	has_written_form = TRUE
 
 /datum/language/yeosa
 	name = LANGUAGE_UNATHI_YEOSA
@@ -48,3 +47,4 @@
 		"a",  "a",  "e",  "e",  "i",  "i",  "o",  "o",  "u",  "u",  "s",  "s"
 	)
 	shorthand = "YU"
+	has_written_form = TRUE

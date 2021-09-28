@@ -1,10 +1,10 @@
 /datum/job/qm
 	title = "Quartermaster"
-	department = "Supply"
+	department = "Снабжения"
 	department_flag = SUP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Главой Персонала"
+	supervisors = "Главе Персонала"
 	economic_power = 8
 	minimal_player_age = 7
 	ideal_character_age = 35
@@ -28,13 +28,17 @@
 							 /datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
 
+/datum/job/qm/get_description_blurb()
+	return " Квартирмейстр, так же известен как КМ, отвечает за работу отдела снабжения (который по другому называют Карго).\
+	Он следит за правильным оформлением бланков заказов и за тем, чтобы карготехник своевременно принимал и отправлял заказы."
+
 /datum/job/cargo_tech
 	title = "Cargo Technician"
-	department = "Supply"
+	department = "Снабжения"
 	department_flag = SUP
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "Завхозом и Главой Персонала"
+	supervisors = "Квартирмейстеру и Главе Персонала"
 	ideal_character_age = 24
 	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/supply/tech
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
@@ -52,13 +56,19 @@
 							 /datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
 
+/datum/job/cargo_tech/get_description_blurb()
+	return "Спустя долгого перетаскивания тяжёлых грузов из точки А в точку В Вы превратились из Ассистента Карго в настоящего Карготехника.\
+	Поздравляем Вас с повышением, а если Вы его каким-то образом получили незаслуженно - бегите перечитывать специальное руководство,\
+	чтобы хоть как-то выглядеть в глазах Вашего начальника в лице Главы Персонала и старшего сотрудника Вашего департамента в виде Квартирмейстера обнадёживающе.\
+	Следите за складом, делайте заказы в центр поставок, жалуйтесь на прорванные трубы, сортируйте мусор, жмите на рычаг, Кронк, и снова жалуйтесь, но уже на нехватку кредитов на балансе отдела."
+
 /datum/job/mining
 	title = "Prospector"
-	department = "Supply"
+	department = "Снабжения"
 	department_flag = SUP
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "Завхозом и Главой Персонала"
+	supervisors = "Квартирмейстеру и Главе Персонала"
 	selection_color = "#515151"
 	economic_power = 7
 	ideal_character_age = 25
@@ -81,13 +91,17 @@
 
 	minimal_access = list()
 
+/datum/job/mining/get_description_blurb()
+	return "Шахтер - это специализированная спасательная, добывающая, археологическая и поисковая рабочая лошадка.\
+	Он присоединяется к экспедиционным миссиям для поиска и добычи ценных минералов, образцов и артефактов для нужд экипажа корабля."
+
 /datum/job/cargo_assistant
 	title = "Cargo Assistant"
-	department = "Supply"
+	department = "Снабжения"
 	department_flag = SUP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Завхозом и Главой Персонала"
+	supervisors = "Квартирмейстеру и Главе Персонала"
 	ideal_character_age = 20
 	selection_color = "#515151"
 	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/supply/assistant
@@ -104,3 +118,8 @@
 	software_on_spawn = list(/datum/computer_file/program/supply,
 							 /datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
+
+/datum/job/cargo_tech/get_description_blurb()
+	return "Папа, мама, бабушка, дедушка, второй папа, всегда говорили Вам, что без хорошего образования Вы будете грузчиком. Однако они не ожидали, что Вы станете космическим грузчиком.\
+	Поздравляем, Вы стали ассистентом департамента снабжения. Бегайте по мелким поручениям Вашего начальника - Главы Персонала и старшего сотрудника склада - Квартирмейстер.\
+	Учитесь максимально быстро перетаскивать грузы с одного конца судна на другой, слушайтесь старших по должности ребят, в чьих интересах не дать заказать Вам оружие для раздачи его всем желающим."

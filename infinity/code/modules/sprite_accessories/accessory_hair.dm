@@ -79,6 +79,10 @@
 	icon_state = "hair_elize"
 	gender = FEMALE
 
+/datum/sprite_accessory/hair/infinity/protagonist
+   name = "Protagonist"
+   icon_state = "hair_protagonist"
+
 /datum/sprite_accessory/hair/infinity/amicia
 	name = "Amicia"
 	icon_state = "hair_amicia"
@@ -92,6 +96,11 @@
 /datum/sprite_accessory/hair/infinity/long_bedhead
 	name = "Very Long Bedhead"
 	icon_state = "hair_long_bedhead"
+	gender = FEMALE
+
+/datum/sprite_accessory/hair/infinity/long_bedhead_alt
+	name = "Very Long Bedhead (Alt)"
+	icon_state = "hair_long_bedhead_alt"
 	gender = FEMALE
 
 /datum/sprite_accessory/hair/infinity/jade
@@ -248,4 +257,40 @@
 /datum/sprite_accessory/hair/infinity/twincurls2
 	name = "Curls Twin"
 	icon_state = "hair_twincurls2"
+
+/datum/sprite_accessory/hair/infinity/travolta
+	name = "Travolta"
+	icon_state = "hair_travolta"
+
+/datum/sprite_accessory/hair/infinity/travolta_tied
+	name = "Travolta Tied"
+	icon_state = "hair_travolta_tied"
+
+/datum/sprite_accessory/hair/infinity/messy_rightcut
+	name = "Messy Right Side Cut"
+	icon_state = "hair_messy_rightcut"
+
+/datum/sprite_accessory/hair/infinity/widowmaker
+	name = "Ponytail Widow"
+	icon_state = "hair_widowmaker"
+
+/datum/sprite_accessory/hair/infinity/widowmaker_alt
+	name = "Ponytail Widow Alt"
+	icon_state = "hair_widowmaker_alt"
+
+/datum/sprite_accessory/hair/infinity/widowmaker_short
+	name = "Ponytail Widow Short"
+	icon_state = "hair_widowmaker_short"
+
+/datum/sprite_accessory/hair/infinity/longwide
+	name = "Long Wide Fringe"
+	icon_state = "hair_longwide"
+
+/datum/sprite_accessory/hair/infinity/mancut
+	name = "Mancut"
+	icon_state = "hair_mancut"
+
+/datum/sprite_accessory/hair/infinity/spiky
+	name = "Spiky Ponytail"
+	icon_state = "hair_ponytail_spiky"
 //[/AURORA]

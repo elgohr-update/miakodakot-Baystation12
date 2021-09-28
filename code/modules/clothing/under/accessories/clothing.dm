@@ -80,6 +80,7 @@
 	name = "sherwani"
 	desc = "A long, coat-like frock with fancy embroidery on the cuffs and collar."
 	icon_state = "sherwani"
+	body_location = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/accessory/qipao
 	name = "qipao"
@@ -158,6 +159,7 @@
 /obj/item/clothing/accessory/toggleable/vest
 	name = "vest"
 	desc = "A slick suit vest."
+	accessory_icons = list(slot_w_uniform_str = 'infinity/icons/mob/onmob/onmob_accessories.dmi', slot_wear_suit_str = 'infinity/icons/mob/onmob/onmob_accessories.dmi') //inf
 	icon_state = "det_vest"
 
 /obj/item/clothing/accessory/toggleable/vest/black
@@ -330,6 +332,7 @@
 	name = "tangzhuang jacket"
 	desc = "A traditional Chinese coat tied together with straight, symmetrical knots."
 	icon_state = "tangzhuang"  //This was originally intended to have the ability to roll sleeves. I can't into code. Will be done later (hopefully.)
+	body_location = UPPER_TORSO | LOWER_TORSO
 
 /obj/item/clothing/accessory/fire_overpants
 	name = "fire overpants"
@@ -340,6 +343,7 @@
 
 	armor = list(laser = ARMOR_LASER_MINOR, energy = ARMOR_ENERGY_MINOR, bomb = ARMOR_BOMB_MINOR)
 	body_parts_covered = LOWER_TORSO | LEGS
+	body_location = LOWER_TORSO | LEGS
 	slowdown = 0.5
 
 	heat_protection = LOWER_TORSO | LEGS
@@ -347,22 +351,3 @@
 
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	max_pressure_protection = FIRESUIT_MAX_PRESSURE
-
-/obj/item/clothing/accessory/space_adapted/venter
-	name = "venter assembly"
-	desc = "A series of complex tubes, meant to dissipate heat from the skin passively."
-	icon_state = "venter"
-	item_state = "venter"
-	slot = "over"
-
-/obj/item/clothing/accessory/space_adapted/bracer
-	name = "legbrace"
-	desc = "A lightweight polymer frame meant to brace and hold someone's legs upright comfortably, protecting their bones from high levels of gravity."
-	icon_state = "legbrace"
-	item_state = "legbrace"
-
-/obj/item/clothing/accessory/space_adapted/bracer/neckbrace
-	name = "neckbrace"
-	desc = "A lightweight polymer frame meant to brace and hold someone's neck upright comfortably, protecting their bones from high levels of gravity."
-	icon_state = "neckbrace"
-	item_state = "neckbrace"

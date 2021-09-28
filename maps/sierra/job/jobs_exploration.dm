@@ -1,11 +1,11 @@
 /datum/job/exploration_leader
 	title = "Exploration Leader"
-	department = "Exploration"
+	department = "Экспедиционный"
 	department_flag = EXP
 
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Директором Исследований и Капитаном"
+	supervisors = "Директору Исследований и Капитану"
 	selection_color = "#68099e"
 	minimal_player_age = 14
 	economic_power = 9
@@ -25,12 +25,13 @@
 						SKILL_WEAPONS     = SKILL_EXPERT)
 	skill_points = 22
 
-	access = list(access_el, access_explorer, access_eva, access_maint_tunnels, access_bridge, access_heads, access_emergency_storage, access_tech_storage, access_guppy_helm, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar)
+	access = list(access_el, access_explorer, access_eva, access_bridge, access_heads, access_emergency_storage, access_tech_storage, access_guppy_helm, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar)
 
 	minimal_access = list()
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
+	good_genome_prob = 30
 
 /datum/job/exploration_leader/get_description_blurb()
 	return "Вы - Экспедиционный Лидер. В ваши обязанности входит организация и участие в миссиях на удаленные объекты. \
@@ -41,11 +42,11 @@
 
 /datum/job/explorer
 	title = "Explorer"
-	department = "Exploration"
+	department = "Экспедиционный"
 	department_flag = EXP
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "Лидером Экспедиции и Директором Исследований"
+	supervisors = "Лидеру Экспедиции и Директору Исследований"
 	selection_color = "#68099e"
 	minimal_player_age = 4
 	ideal_character_age = 20
@@ -61,9 +62,9 @@
 	max_skill = list(	SKILL_SCIENCE = SKILL_MAX,
 						SKILL_COMBAT  = SKILL_EXPERT,
 						SKILL_WEAPONS = SKILL_EXPERT)
-//	required_role = list("Exploration Leader", "Expeditionary Pilot")
+	required_role = list("Exploration Leader", "Expeditionary Pilot")
 
-	access = list(access_explorer, access_maint_tunnels, access_eva, access_emergency_storage, access_guppy_helm, access_expedition_shuttle, access_guppy, access_hangar, access_cent_creed)
+	access = list(access_explorer, access_eva, access_emergency_storage, access_guppy_helm, access_expedition_shuttle, access_guppy, access_hangar)
 
 	minimal_access = list()
 
@@ -79,11 +80,11 @@
 
 /datum/job/explorer_pilot
 	title = "Expeditionary Pilot"
-	department = "Exploration"
+	department = "Экспедиционный"
 	department_flag = EXP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Лидером Экспедиции и Директором Исследований"
+	supervisors = "Лидеру Экспедиции и Директору Исследований"
 	selection_color = "#68099e"
 	minimal_player_age = 14
 	ideal_character_age = 24
@@ -101,7 +102,7 @@
 						SKILL_COMBAT  = SKILL_EXPERT,
 						SKILL_WEAPONS = SKILL_EXPERT)
 
-	access = list(	access_explorer, access_maint_tunnels, access_eva, access_emergency_storage, access_guppy_helm,
+	access = list(	access_explorer, access_eva, access_emergency_storage, access_guppy_helm,
 					access_expedition_shuttle, access_guppy, access_hangar, access_expedition_shuttle_helm)
 
 	minimal_access = list()
@@ -118,11 +119,11 @@
 
 /datum/job/explorer_medic
 	title = "Field Medic"
-	department = "Exploration"
+	department = "Экспедиционный"
 	department_flag = EXP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Лидером Экспедиции и Директором Исследований"
+	supervisors = "Лидеру Экспедиции и Директору Исследований"
 	selection_color = "#68099e"
 	ideal_character_age = 34
 	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/exploration/medic
@@ -144,11 +145,10 @@
 						SKILL_SCIENCE = SKILL_MAX,
 						SKILL_COMBAT  = SKILL_EXPERT,
 						SKILL_WEAPONS = SKILL_EXPERT)
-//	required_role = list("Exploration Leader", "Expeditionary Pilot")
+	required_role = list("Exploration Leader", "Expeditionary Pilot")
 
-	access = list(	access_explorer, access_maint_tunnels, access_eva, access_emergency_storage,
-					access_guppy_helm, access_expedition_shuttle, access_guppy, access_hangar,
-					access_medical)
+	access = list(	access_explorer, access_eva, access_emergency_storage, access_field_med,
+					access_guppy_helm, access_expedition_shuttle, access_guppy, access_hangar)
 
 	minimal_access = list()
 
@@ -164,11 +164,11 @@
 
 /datum/job/explorer_engineer
 	title = "Field Engineer"
-	department = "Exploration"
+	department = "Экспедиционный"
 	department_flag = EXP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Лидером Экспедиции и Директором Исследований"
+	supervisors = "Лидеру Экспедиции и Директору Исследований"
 	selection_color = "#68099e"
 	minimal_player_age = 8
 	ideal_character_age = 28
@@ -194,10 +194,10 @@
 						SKILL_SCIENCE      = SKILL_MAX,
 						SKILL_COMBAT       = SKILL_EXPERT,
 						SKILL_WEAPONS      = SKILL_EXPERT)
-//	required_role = list("Exploration Leader", "Expeditionary Pilot")
+	required_role = list("Exploration Leader", "Expeditionary Pilot")
 
-	access = list(	access_explorer, access_maint_tunnels, access_eva, access_emergency_storage,
-	 				access_guppy_helm, access_expedition_shuttle, access_guppy, access_hangar, access_engine)
+	access = list(	access_explorer, access_eva, access_emergency_storage, access_field_eng,
+	 				access_guppy_helm, access_expedition_shuttle, access_guppy, access_hangar)
 
 	minimal_access = list()
 

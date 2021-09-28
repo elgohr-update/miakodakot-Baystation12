@@ -11,6 +11,11 @@
 /decl/emote/audible/synth/do_extra(var/atom/user)
 	if(emote_sound)
 		playsound(user.loc, emote_sound, 50, 0)
+
+/decl/emote/audible/synth/scream
+	key = "scream"
+	emote_message_3p = "USER screams."
+	emote_sound = 'infinity/sound/voice/scream_robot.ogg'
 //[/INF]
 /decl/emote/audible/synth/ping
 	key = "ping"
@@ -39,7 +44,7 @@
 	emote_sound = 'sound/voice/biamthelaw.ogg'
 
 /decl/emote/audible/synth/security/check_user(var/mob/living/silicon/robot/user)
-	return (istype(user) && istype(user.module,/obj/item/weapon/robot_module/security))
+	return (istype(user) && istype(user.module,/obj/item/robot_module/security))
 
 /decl/emote/audible/synth/security/halt
 	key = "halt"

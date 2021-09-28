@@ -1,5 +1,14 @@
 // Unathi clothing
 
+/datum/gear/passport/unathi
+	display_name = "(Unathi) registration document"
+	path = /obj/item/passport/xeno/unathi
+	sort_category = "Xenowear"
+	flags = 0
+	whitelisted = list(SPECIES_UNATHI)
+	custom_setup_proc = /obj/item/passport/proc/set_info
+	cost = 0
+
 // Skrell clothing
 
 /datum/gear/head/skrell_helmet
@@ -37,6 +46,15 @@
 /datum/gear/eyes/resomi/lenses_med
 	allowed_roles = MEDICAL_ROLES
 
+/datum/gear/passport/resomi
+	display_name = "(Resomi) registration document"
+	path = /obj/item/passport/xeno/resomi
+	sort_category = "Xenowear"
+	flags = 0
+	whitelisted = list(SPECIES_RESOMI)
+	custom_setup_proc = /obj/item/passport/proc/set_info
+	cost = 0
+
 // IPC clothing
 
 /datum/gear/suit/lab_xyn_machine
@@ -45,6 +63,14 @@
 // Misc clothing
 
 // Tajaran clothing
+/datum/gear/passport/tajara
+	display_name = "(Tajara) passport"
+	path = /obj/item/passport/xeno/tajara
+	whitelisted = list(SPECIES_TAJARA)
+	flags = 0
+	sort_category = "Xenowear"
+	custom_setup_proc = /obj/item/passport/proc/set_info
+	cost = 0
 
 // Pre-modified gloves
 
@@ -57,13 +83,13 @@
 // Vox clothing
 
 /datum/gear/mask/gas/vox
-	allowed_roles = list(/datum/job/merchant, /datum/job/merchant_trainee, /*/datum/job/stowaway*/)
+	allowed_roles = list(/datum/job/submap/merchant, /datum/job/submap/merchant_trainee, /*/datum/job/stowaway*/)
 
 /datum/gear/gloves/vox
-	allowed_roles = list(/datum/job/merchant, /datum/job/merchant_trainee, /*/datum/job/stowaway*/)
+	allowed_roles = list(/datum/job/submap/merchant, /datum/job/submap/merchant_trainee, /*/datum/job/stowaway*/)
 
 /datum/gear/uniform/vox_cloth
-	allowed_roles = list(/datum/job/merchant, /datum/job/merchant_trainee, /*/datum/job/stowaway*/)
+	allowed_roles = list(/datum/job/submap/merchant, /datum/job/submap/merchant_trainee, /*/datum/job/stowaway*/)
 
 /datum/gear/uniform/vox_robe
-	allowed_roles = list(/datum/job/merchant, /datum/job/merchant_trainee, /*/datum/job/stowaway*/)
+	allowed_roles = list(/datum/job/submap/merchant, /datum/job/submap/merchant_trainee, /*/datum/job/stowaway*/)
